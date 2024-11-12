@@ -1,36 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Practica con dominio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta de Perfil</title>
+    <style>
+        /* Estilos para la tarjeta de perfil */
+        .tarjeta {
+            width: 300px;
+            min-height: 150px;
+            padding: 20px;
+            border: 2px solid grey;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 0 auto;
+        }
+
+        /* Estilo para el nombre */
+        .tarjeta h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        /* Estilo para la presentación */
+        .tarjeta p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Estilo para el botón */
+        .tarjeta button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .tarjeta button:hover {
+            background-color: lightblue;
+        }
+    </style>
 </head>
-<body bgcolor="#B4E2F1">
-
 <body>
-<h1>Etiquetas HTML</h1>
-<p>Este ejemplo muestra cómo combinar algunas de las etiquetas más básicas de HTML5.<br />
-<mark>Recuerda que es importante entender la diferencia entre ellas</p>
-<h2>Etiqueta ul+li</h2>
-<p>Si listamos personas nominadas a los Oscars, dado que el orden no altera el significado. <br />
-debemos usar ul.</p>
+    <div class="tarjeta">
+        <h2>Monserrat</h2>
+        <p>Hola, soy Monserrat. Estudiante del PE de TIOR de séptimo semestre.</p>
+        <button>Contactar</button>
+    </div>
 </body>
 </html>
-<ul type="circle">
-<li>David Verdaguez</li>
-<li>Jesús Castro</li>
-<li>Israel Elejalde</li>
-<li>Dani Rivera</li></ul>
-<h2>Etiqueta ol+li</h2>
-<p>En el caso de que estemos listando elementos donde el orden es importante, como por <br />
-ejemplo la clasificación de un mundial del futbol, debemos usar ol.</p>
+
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Artículo con Imagen</title>
+    <style>
+        .articulo {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .articulo img {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .contenido {
+            padding: 10px;
+        }
+        .contenido h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .contenido p {
+            font-size: 16px;
+            color: #666;
+        }
+        .leer-mas {
+            background-color: #007BFF;
+            color: white;
+            padding: 8px 12px;
+            text-decoration: none;
+        }
+        .leer-mas:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="articulo">
+        <img src="IMG/1.webp" alt="Imagen de ejemplo">
+        <div class="contenido">
+            <h2>Libro Fabricante de Lagrimas</h2>
+            <p>Este es un breve resumen del libro "Fabricante de Lagrimas". 
+                En el orfanato en el que Nica creció, siempre se han contado 
+                historias y leyendas a la luz de la vela. La más famosa de 
+                todas es la del fabricante de lágrimas..</p>
+            <a href="#" class="leer-mas">Leer más...</a>
+        </div>
+    </div>
 </body>
 </html>
-<ol type="circle">
-1.España</li> <br />
-2.Paises Bajos</li> <br />
-3.Alemania</li> <br />
-4.Uruguay</li> <br />
 
-<hr>
- <p> <small>Estudiante: Monserrat Diez Comi_ EE Desarrollo Web</small></p>
-
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cuatro Cajas</title>
+    <style>
+        .contenedor {
+            width: 80%;
+            padding: 20px;
+            border: 2px solid gray;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .caja {
+            width: 100%;
+            height: 150px;
+            padding: 1px;
+            border: 2px solid #ccc;
+            text-align: center;
+            line-height: 150px;
+        }
+        .caja1 { background-color: #5a201b; }
+        .caja2 { background-color: #b4e2ff; }
+        .caja3 { background-color: #ffe7fe; }
+        .caja4 { background-color: #062e6e; }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="caja caja1">Caja 1</div>
+        <div class="caja caja2">Caja 2</div>
+        <div class="caja caja3">Caja 3</div>
+        <div class="caja caja4">Caja 4</div>
+    </div>
+</body>
+</html>
